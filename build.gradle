@@ -9,7 +9,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
-group 'com.abbish.thoughtworks'
+group 'com.abbish'
 version '0.0.1'
 
 repositories {
