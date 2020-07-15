@@ -39,7 +39,7 @@ dependencies {
 publishing {
     publications {
         adkCore(MavenPublication) {
-            artifactId = 'dci-adk-core'
+            artifactId = 'business-oriented-model'
             from components.java
             pom {
                 name = 'Implement of 8x Flow Business Oriented Modeling'
