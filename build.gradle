@@ -10,16 +10,10 @@ java {
 }
 
 group 'com.abbish'
-version '0.0.1'
+version '0.0.2'
 
 repositories {
-    maven {
-        url = URI.create("https://maven.pkg.github.com/abbish/dci-architecture-development-kit")
-        credentials {
-            username = "abbish"
-            password = "830c2c341faf6c380991832327c62f4fcaf15e1f"
-        }
-    }
+    maven { url 'https://jitpack.io' }
     mavenLocal()
     mavenCentral()
     jcenter()
@@ -27,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.domainmodeling.dci:dci-adk-core:0.0.3")
+    implementation("com.github.abbish:dci-architecture-development-kit:0.0.5")
     implementation("com.google.guava:guava:29.0-jre")
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
