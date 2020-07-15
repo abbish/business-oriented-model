@@ -38,7 +38,7 @@ dependencies {
 
 publishing {
     publications {
-        adkCore(MavenPublication) {
+        businessOrientedModel(MavenPublication) {
             artifactId = 'business-oriented-model'
             from components.java
             pom {
@@ -48,7 +48,7 @@ publishing {
                     developer {
                         id = 'abbish'
                         name = 'ZhiTong Zhao'
-                        email = 'ztzhao@thoughtworks.com'
+                        email = 'me@abbish.com'
                     }
                 }
                 scm {
