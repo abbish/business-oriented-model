@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'com.abbish.thoughtworks'
+version '0.0.1'
+
+repositories {
+    maven {
+        url = URI.create("https://maven.pkg.github.com/abbish/dci-architecture-development-kit")
+        credentials {
+            username = "abbish"
+            password = "830c2c341faf6c380991832327c62f4fcaf15e1f"
+        }
+    }
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    implementation("com.domainmodeling.dci:dci-adk-core:0.0.3")
+    implementation("com.google.guava:guava:29.0-jre")
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
